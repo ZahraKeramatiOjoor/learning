@@ -1,0 +1,12 @@
+.digital{
+    width: 25rem; 
+    height: 15rem;
+    background-color: rgba(124, 124, 124, 0.3);
+    border-radius: 15px;
+    margin-left: 35rem;
+    margin-top: 15rem;
+}
+h1{
+    padding: 10px;
+    align-items: center;
+}

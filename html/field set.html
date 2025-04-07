@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <!-- از فیلدست برای قراردادن و جدا کردن قسمت های مختلف یک فرم استفاده میکنیم. با استفاده از این تگ یک بوردر به دور قسمت 
+             مشخص شده قرار میگیرد.
+              -->
+            <legend>Personal Information</legend>
+            <!--  مقدار لِجِند عنوان آن فیلدست را مشخص میکند که استایل مشخصی هم دارد. با توجه به جهت قرار گیری متن یا دایرکشن در تگ
+              اچ تی ام ال در سمت راست بالا یا چپ بالا عنوان را قرار میدهد.
+                -->
+             <h3>Name:</h3>
+            <div>
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="fname">
+            </div>
+            <br>
+            <div>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lname">
+            </div>
+            <br>
+            <h3>Gender:</h3>
+            <div>
+                <input type="radio" value="male" id="male" name="gender">
+                <label for="male">male</label>
+            </div>
+            <div>
+                <input type="radio" value="female" id="female" name="gender">
+                <label for="female">female</label>
+            </div>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>skill</legend>
+            <h3>Languages:</h3>
+            <div>
+                <input type="checkbox" id="html" name="skills" value="Html" >
+                <label for="html">Html5</label>
+            </div>
+            <div>
+                <input type="checkbox" id="css" name="skills" value="Css" >
+                <label for="css">Css3</label>
+            </div>
+            <div>
+                <input type="checkbox" id="js" name="skills" value="javascript" >
+                <label for="js">JavaScript</label>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <h3>Choose Your Programming Languages:</h3>
+            <input type="text" list="samplelist">
+            <datalist id="samplelist">
+                <!-- با استفاده از دیتالیست میتوان لیستی ساخت که کاربر با تایپ متن قابلیت جستجو در بین مقادیر لیست را داشته باشد
+                  -->
+                <!--  تفاوت سلکت و دیتالیست در تعداد بسیار زیاد مقادیر دیتالیست و قابلیت جستجو و تایپ در دیتالیست میباشد.
+                   -->
+                <!-- موراد مورد استفاده دیتا لیست: در انتخاب نام شهر یا کشور یا موضوعی در بین موارد بسیار زیاد
+                  -->
+                <option value="html">Html5</option>
+                <option value="css">Css3</option>
+                <option value="js">JavaScript</option>
+                <option value="php">PHP</option>
+                <option value="phyton">Phyton</option>
+                <option value="C#">C#</option>
+                <option value="ruby">Ruby</option>
+            </datalist>
+        </div>
+        
+        <br>
+        <input type="submit" value="save data">
+        
+    </form>
+</body>
+</html>

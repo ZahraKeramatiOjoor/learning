@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="" method="get">
+        <!-- مقدار اکشن لینکی است که بک اند کار باید تنظیم کند. در واقع مکانی را مشخص میکند که اطلاعات  این فرم قرار است در آنجا
+         ذخیره شود.
+         اگر مقداری برای اکشن مشخص نشود داده ها به همان صفحه ای که اطلاعات در آن وارد شده برمیگردند.
+          -->
+         <!-- مقدار متود را هم بک اند کار مشخص میکند اما به طور کلی معمولا بر روی حالت گِت قرار داده میشود.
+          این متغیر حالت و نحوه ارسال اطلاعات به پایگاه داده را مشخص میکند. که انواع متفاوتی هم دارد که بک اند کار بسته به نیاز
+          یکی را انتخاب و استفاده خواهد کرد.
+          -->
+        <label for="name">نام:</label>
+        <input type="text" id="name" name="fname" value="">
+        <br>
+        <!-- مقدار نام یا نِیم به عنوان جدولی گفته میشود که اطلاعات در آن ذخیره شده
+         و اگر برای یک متغیری ما نامی تعریف نکنیم اصلا اطلاعات به سرور ارسال نمیشود.
+          -->
+        <!-- مقدار ولیو به عنوانی داده میشود که در جدول پایگاه داده قرار است سیو شود و بعدها قابل شناسایی برای بک اند کار باشد
+         مقدار ولیو به نیم داده میشود و اگر برای یک نوشته ای مقدار ولیو ثابتی را در نظر بگیریم
+         دیگر نمیتوان اطلاعات جدیدی در آن فیلد وارد کرد. -->
+        <br>
+        <label for="phone">شماره تماست:</label>
+        <input type="text" id="phone" >
+        <!-- مقدار آیدی و مقدار فور باید با هم برابر باشد تا اتصال این دو انجام شود بطوریکه با کلیک بر روی نوشته کادر متنی انتخاب میشود.
+         اگر یکی نباشد یا آیدی ها اشتباهی ست شده باشند هنگام کلیک روی لیبل یا نوشته اون کادر متنی انتخاب میشه که فورش با آیدیش ست شده باشه
+          -->        <br>
+
+        <h2>radio button</h2>
+        <input type="radio" id="one" name="gender" value="male">
+        <label for="one">male</label>
+        <br>
+        <input type="radio" id="two" name="gender" value="female">
+        <label for="two">female</label>
+        <!-- در هنگام انتخاب برای رادیوباتن اگر بخواهیم بین گزینه ها یک گزینه را انتخاب کنیم باید تمامی گزینه ها را با نام یکسان و ولیو یا مقدار خودش
+         ذخیره کنیم. اگر مقدار نام متفاوت باشد در جدول متفاوتی ذخیره میشود و بنابراین میتوان هر دو گزینه یا گزینه های مختلف را
+         انتخاب کرد. -->
+        
+        <br>
+
+        <h2>checkbox</h2>
+        <input type="checkbox" id="checkbox1" name="skill1" value="Html">
+        <label for="checkbox1">Html</label>
+        <br>
+        <input type="checkbox" id="checkbox2" name="skill2" value="css">
+        <label for="checkbox2">css</label>
+        <br>
+        <input type="checkbox" id="checkbox3" name="skill3" value="js">
+        <label for="checkbox3">js</label>
+        <br>
+        <br>
+        <input type="submit" value="save data">
+        <button type="submit">save data</button>
+        <input type="reset" value="reset">
+        <button type="reset">reset</button>
+
+
+    </form>
+</body>
+</html>

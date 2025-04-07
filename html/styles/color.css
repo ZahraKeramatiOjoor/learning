@@ -1,0 +1,19 @@
+body {
+    width: 800px;
+    height: 800px;
+    color:rgb(200, 0, 240);
+    /* color:rgba(red, green, blue, alpha);
+    color: hsl(hue, saturation, lightness);
+    color: hsla(hue, saturation, lightness, alpha);
+    color: red;
+    color: #000;  */
+    /* background-color: ghostwhite; */
+    /* تمام موارد رنگ برای بکگراندکالر هم صدق میکنه */
+    /* background: #ff1 url(../image/image2.jpg) no-repeat fixed center; */
+    background-image: url(../image/image2.jpg);
+    background-size: 50%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+}
