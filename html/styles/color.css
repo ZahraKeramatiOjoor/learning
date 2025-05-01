@@ -1,7 +1,7 @@
 body {
-    width: 800px;
+    /* width: 800px;
     height: 800px;
-    color:rgb(200, 0, 240);
+    color:rgb(200, 0, 240); */
     /* color:rgba(red, green, blue, alpha);
     color: hsl(hue, saturation, lightness);
     color: hsla(hue, saturation, lightness, alpha);
@@ -10,11 +10,24 @@ body {
     /* background-color: ghostwhite; */
     /* تمام موارد رنگ برای بکگراندکالر هم صدق میکنه */
     /* background: #ff1 url(../image/image2.jpg) no-repeat fixed center; */
-    background-image: url(../image/image2.jpg);
+    /* background-image: url(../image/image2.jpg);
     background-size: 50%;
     background-position: top;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-attachment: fixed; */
+}
+    /* background image */
+.back {
+    width: 800px;
+    height: 800px;
+     /* background: url(../image/image1.jpg) no-repeat 100% fixed center; */
+
+    background-image: url(../image/image1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+     /* با نوشتن bgr به طور خلاصه میشه همین بکگراند ایمیج رو دراورد */
     background-attachment: fixed;
-    
+    background-position: center;
+     
 }
